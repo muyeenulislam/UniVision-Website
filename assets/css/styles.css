@@ -1,0 +1,37 @@
+body {
+}
+
+@media (min-width: 650px) {
+  .second-card {
+    margin-top: 89px;
+  }
+}
+
+.link-secondary:focus, .link-secondary:hover {
+  color: #D2D2D2!important;
+}
+
+@media (min-width: 992px) {
+  #univision-intro {
+    max-width: 380px;
+  }
+}
+
+@media (min-width: 992px) {
+  #offices {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+  footer .container {
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  input, textarea {
+    width: 85% !important;
+  }
+}
+

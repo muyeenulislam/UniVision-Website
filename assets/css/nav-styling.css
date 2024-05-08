@@ -1,0 +1,60 @@
+.active {
+  color: #038175 !important;
+  font-weight: bolder !important;
+}
+
+.btn-primary.bg-green:hover, a.btn.bg-green:hover {
+  background-color: white;
+  color: #038175 !important;
+  border-color: #038175;
+}
+
+#meet-team-btn:hover {
+  box-shadow: 0 4px 10px rgb(0 0 0 / 30%) !important;
+}
+
+[id^='menu-btn']:hover, [id^='menu-btn']:active, [id^='menu-btn']:focus {
+  color: #038175 !important;
+  background-color: initial !important;
+}
+
+.centered-div {
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: url("../../assets/img/feather-icons-black/minus.svg");
+}
+
+.accordion-button:not(.collapsed) {
+  color: #038175 !important;
+}
+
+.accordion-button.collapsed::after {
+  background: url("../../assets/img/feather-icons-black/plus.svg");
+}
+
+.accordion-button {
+  background-color: white !important;
+  color: #707070!important;
+}
+
+.accordion-item {
+  border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: var(--bs-accordion-btn-focus-border-color);
+  outline: 0;
+  box-shadow: none;
+}
+
+[id^="menu-btn"]:focus {
+  box-shadow: none;
+}
+

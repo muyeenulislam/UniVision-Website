@@ -1,0 +1,102 @@
+.text-88 {
+  font-size: 88px;
+  line-height: 100px;
+}
+
+.text-64 {
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.text-48 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.text-40 {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.text-32 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.text-28 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.text-24 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text-20 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.text-18 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.text-16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-14 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-12 {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text-14c {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.text-12c {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.text-10c {
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .text-md-32 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .text-md-28 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .text-md-48 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .text-md-40 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}

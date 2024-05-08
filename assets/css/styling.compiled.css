@@ -1,0 +1,277 @@
+strong {
+  font-size: clamp(13px, 1.25vw, 15px);
+}
+
+p, li {
+  font-size: clamp(13px, 1.25vw, 15px);
+  font-weight: 500;
+}
+
+footer strong {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#navigation-bar li, [id^=navcol] a {
+  font-weight: 500;
+  font-size: clamp(12px, 1.25vw, 14px) !important;
+  padding: 5px 0 !important;
+}
+
+#navigation-bar li a:hover, [id^=navcol] a:hover {
+  color: #018d7f !important;
+}
+
+#students p, #schools p, .careers p, #team p, .contact p {
+  font-weight: 600;
+}
+
+#students h1, #schools h1 {
+  font-weight: 800;
+  font-size: clamp(13px, 2vw, 15px);
+  margin: 30px auto 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+}
+
+#home {
+  width: 90%;
+  max-width: 1200px;
+  padding: 80px 20px;
+}
+
+.ityped::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 14px;
+  background-color: #038175;
+  border-radius: 29px;
+  z-index: -1;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.sub-heading {
+  font-weight: 800;
+  font-size: clamp(20px, 3vw, 32px);
+  margin-bottom: 10px;
+}
+
+.tag-line {
+  font-weight: 700;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.member-name {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.member-title {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+#team-wrapper > div {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#team-wrapper > div:hover {
+  transform: scale(1.05);
+}
+
+#home h1 {
+  font-weight: 800;
+  font-size: clamp(24px, 4vw, 35px);
+  line-height: 1.35;
+}
+
+.images {
+  max-width: 300px;
+}
+
+.accordion-button {
+  font-weight: 800;
+  font-size: clamp(12px, 2vw, 14px) !important;
+}
+
+.accordion-body p, .accordion-body li {
+  font-weight: 400;
+  font-size: clamp(12px, 2vw, 14px);
+}
+
+.small-heading {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: clamp(16px, 2vw, 22px);
+}
+
+.para-big {
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-size: clamp(14px, 2vw, 22px);
+}
+
+#career-para1 {
+  max-height: clamp(42px, 1.25vw, 15px);
+  overflow: hidden;
+}
+
+#career-para2, #see-less {
+  display: none;
+}
+
+input, textarea {
+  padding: 16px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  border: 1px solid rgba(0, 0, 0, 0.514);
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: clamp(10px, 2rem, 18px);
+  color: #979797;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+input:focus, textarea:focus {
+  box-shadow: none !important;
+  border-color: #038175 !important;
+}
+
+footer p {
+  width: 80%;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #018d7f;
+  border-radius: 50%;
+  border: none;
+  color: #fff !important;
+  box-shadow: rgba(0, 0, 0, 0.65) 0px 25px 20px -20px !important;
+  z-index: 111;
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+  padding: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+textarea {
+  aspect-ratio: 1/0.3;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1400px) {
+  .images {
+    max-width: 250px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #home h1 {
+    font-weight: 800;
+    font-size: clamp(25px, 4vw, 35px);
+    line-height: 1.35;
+  }
+}
+@media only screen and (max-width: 991px) {
+  #home {
+    width: 96%;
+    padding: 50px 15px;
+  }
+
+  #students > div, #schools > div {
+    padding: 15px 12px !important;
+    width: 200px !important;
+  }
+
+  .images {
+    max-width: 190px;
+  }
+
+  #career-para1 {
+    max-height: clamp(41px, 1.25vw, 15px);
+  }
+}
+@media only screen and (max-width: 800px) {
+  #students > div, #schools > div {
+    width: 180px !important;
+  }
+
+  #team-wrapper div {
+    max-width: calc(100%/2 - 5px);
+  }
+
+  .nav-link {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+
+  .small-heading,
+.para-big {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #submit {
+    width: 90% !important;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #students > div, #schools > div {
+    padding: 15px 12px !important;
+    width: 90% !important;
+    max-height: 350px !important;
+    height: auto !important;
+    margin: 20px 0px;
+  }
+
+  #home {
+    margin-top: 60px !important;
+  }
+
+  #faqs > div {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 470px) {
+  #home {
+    padding-top: 70px;
+  }
+
+  .member-name {
+    font-size: 10px;
+  }
+
+  .member-title {
+    font-size: 9px;
+  }
+
+  #join-img {
+    max-width: 250px !important;
+  }
+
+  footer p {
+    width: 100%;
+  }
+
+  #career-para1 {
+    max-height: clamp(62px, 1.25vw, 15px);
+  }
+}
