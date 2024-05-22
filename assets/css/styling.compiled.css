@@ -7,6 +7,213 @@ p, li {
   font-weight: 500;
 }
 
+.bold-font {
+  font-weight: bold;
+}
+
+.light-font {
+  font-weight: lighter;
+}
+
+p, a{
+  color: #000;
+}
+
+..containercareer {
+  display: flex;
+  justify-content: center;
+}
+
+.contentcareer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #dcdada !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-containercareer {
+  position: relative;
+}
+
+.text-overlaycareer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .contentcareer {
+      flex-direction: row;
+  }
+
+  .form-containercareer {
+      flex: 1;
+      margin-right: 20px;
+  }
+
+  .image-containercareer {
+      flex: 1;
+  }
+
+  .text-overlaycareer {
+      width: 80%;
+  }
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea,
+.form-group input[type="file"],
+#submitButton {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 12px;
+  width: 100% !important;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+
+
+#submitButton {
+color: #fff;
+margin-top: 30px;
+font-weight: bold;
+}
+
+#submitButton:hover {
+  background-color: #038175;
+  }
+
+  .form-containercareer {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    width: 100%;
+}
+
+
+.image-containercareer {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden; /* Ensure any overflowing content is hidden */
+}
+
+.image-containercareer img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;  
+}
+
+.text-overlaycareer { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: white;
+  padding: 20px; /* Adjust padding as needed */
+  
+  border-radius: 20px; /* Rounded corners */
+  width: calc(100% - 40px); /* Width of the text overlay, considering padding */
+  max-width: calc(100% - 40px); /* Maximum width of the text overlay, considering padding */
+  white-space: normal; /* Allow text to wrap */
+}
+
+.text-overlaycareer h1,
+.text-overlaycareer p {
+  margin-bottom: 10px; /* Add margin between elements */
+}
+
+ul.list-inline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+ul.list-inline li {
+  margin-right: 2px; /* Minimal space between icons initially */
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.social-handle {
+  margin-left: 0;
+  opacity: 0;
+  background-color: #018d7f; /* Change to desired background color */
+  color: #fff; /* Change to desired text color */
+  border-radius: 12px; /* Rounded corners */
+  padding: 2px 8px; /* Padding inside the rounded rectangle */
+  white-space: nowrap;
+  transition: margin-left 0.3s ease, opacity 0.3s ease;
+  max-width: 0;
+  overflow: hidden;
+}
+
+.social-link:hover .social-handle {
+  margin-left: 10px;
+  opacity: 1;
+  max-width: 150px; /* Adjust according to the maximum expected width of the handle */
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .text-overlaycareer {
+    padding: 15px;
+    font-size: 14px;
+    MARGIN-TOP: 15% /* Adjust padding for tablet screens */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .text-overlaycareer {
+    padding: 15px; /* Adjust padding for mobile screens */
+    font-size: 14px;
+    MARGIN-TOP: 10%; /* Adjust font size for mobile screens */
+  }
+}
+
+
+
+#about-content, a:hover  {
+  color: #fff !important;
+  
+}
+#about-content, i:hover{
+  color: #fff !important;
+  
+}
+
 footer strong {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
@@ -14,14 +221,31 @@ footer strong {
   display: inline-block;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar.white-bg {
+  background-color: #fff;
+}
+
+
 #navigation-bar li, [id^=navcol] a {
-  font-weight: 500;
+  font-weight: 200;
   font-size: clamp(12px, 1.25vw, 14px) !important;
   padding: 5px 0 !important;
 }
 
+
+
 #navigation-bar li a:hover, [id^=navcol] a:hover {
-  color: #018d7f !important;
+  color: White   !important;
 }
 
 #students p, #schools p, .careers p, #team p, .contact p {
@@ -37,11 +261,78 @@ footer strong {
   max-width: 200px;
 }
 
-#home {
-  width: 90%;
-  max-width: 1200px;
-  padding: 80px 20px;
-}
+.banners {
+        overflow: hidden;
+        background-image: url('assets/img/homebg.png');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 100vh;
+    }
+    
+    .navbar {
+        width: 100%;
+        z-index: 2000;
+        height: 110px;
+    }
+    
+    #home {
+        margin-top: 120px;
+    }
+    
+    #main-heading h1 {
+        color: white;
+    }
+    
+    .text-18 {
+        color: white;
+    }
+    .text-18 {
+      font-size: 18px;
+    }
+  
+    /* Responsive CSS for smaller screens */
+    @media only screen and (max-width: 600px) {
+      .text-18 {
+        font-size: 12px; /* Adjust as needed */
+        line-height: 1.2; /* Adjust line height as needed */
+      }
+    }
+    
+   
+    
+    /* Ensure no horizontal scroll bar */
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    /* Responsive font size for heading */
+    #home h1 {
+        font-weight: 800;
+        font-size: clamp(24px, 4vw, 35px);
+        line-height: 1.35;
+    }
+    
+    @media only screen and (max-width: 767px) {
+        #home {
+            width: 96%;
+            padding: 50px 15px;
+        }
+        #home {
+            margin-top: 60px !important;
+        }
+    }
+    
+    @media only screen and (max-width: 470px) {
+        #home {
+            padding-top: 70px;
+        }
+    }
+
+
+
 
 .ityped::after {
   content: "";
@@ -56,11 +347,78 @@ footer strong {
   left: 0;
 }
 
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px; /* Adjust the width of the line */
+  background-color: #018d7f;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px; /* Adjust the margin to center the line */
+}
+
+/* Circle at the start of the timeline */
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #018d7f;
+  border-radius: 50%;
+  top: calc(0% - 10px); /* Adjust this value to position the circle */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Circle at the end of the timeline */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #018d7f;
+  border-radius: 50%;
+  top: calc(100% - 10px); /* Adjust this value to position the circle */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-section {
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+
 .sub-heading {
   font-weight: 800;
   font-size: clamp(20px, 3vw, 32px);
   margin-bottom: 10px;
 }
+.sub-heading1 {
+  font-weight: 300;
+  font-size: clamp(20px, 3vw, 32px);
+  margin-bottom: 10px;
+}
+
+.sub-heading2 {
+  font-weight: 500;
+  font-size: clamp(20px, 3vw, 32px);
+  margin-bottom: 10px;
+}
+
 
 .tag-line {
   font-weight: 700;
@@ -86,14 +444,54 @@ footer strong {
   transform: scale(1.05);
 }
 
-#home h1 {
-  font-weight: 800;
-  font-size: clamp(24px, 4vw, 35px);
-  line-height: 1.35;
+
+
+.about-content {
+  text-align: right; /* Align the content within the container to the right */
+}
+
+.about-content h5 {
+  text-align: left; /* Align the heading to the left */
+}
+
+.footer {
+  background: linear-gradient(to right, #32746E, #025049, #00322E);
+  color: #fff;
+  padding: 50px 0 0 0; /* Decreased bottom padding to 30px */
+  text-align: center;
+}
+
+
+.footer h5 {
+  color: #fff;  
+}
+
+.footer p {
+  color: #fff;
+  text-align: Left;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-logo {
+  text-align: center;
+  max-width: 200px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 30px; /* Add margin to create space between logo and text */
 }
 
 .images {
-  max-width: 300px;
+  /* max-width: 300px; */
 }
 
 .accordion-button {
@@ -106,8 +504,10 @@ footer strong {
   font-size: clamp(12px, 2vw, 14px);
 }
 
+
+
 .small-heading {
-  color: #000;
+  color: #000 !important;
   font-weight: 700;
   margin-bottom: 30px;
   font-size: clamp(16px, 2vw, 22px);
@@ -148,7 +548,7 @@ input:focus, textarea:focus {
 }
 
 footer p {
-  width: 80%;
+  width: 100%;
 }
 
 .back-to-top {
@@ -183,18 +583,10 @@ textarea {
     max-width: 250px;
   }
 }
-@media only screen and (max-width: 1024px) {
-  #home h1 {
-    font-weight: 800;
-    font-size: clamp(25px, 4vw, 35px);
-    line-height: 1.35;
-  }
-}
+
+
+
 @media only screen and (max-width: 991px) {
-  #home {
-    width: 96%;
-    padding: 50px 15px;
-  }
 
   #students > div, #schools > div {
     padding: 15px 12px !important;
@@ -242,18 +634,14 @@ textarea {
     margin: 20px 0px;
   }
 
-  #home {
-    margin-top: 60px !important;
-  }
+ 
 
   #faqs > div {
     width: 100% !important;
   }
 }
 @media only screen and (max-width: 470px) {
-  #home {
-    padding-top: 70px;
-  }
+ 
 
   .member-name {
     font-size: 10px;

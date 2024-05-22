@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Menu</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/bg-color.compiled.css">
+
+
+    <style>
+        body {
+            font-family: Montserrat, sans-serif;
+            background-color: #018d7f;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .menu-links {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .menu-links li {
+            margin: 40px 0;
+        }
+        .menu-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        
+        .back-icon {
+            color: white;
+            font-size: 1.5em;
+            position: absolute; /* Added */
+            top: 30px; /* Added */
+            left: 30px; /* Added */
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="back-button" onclick="window.history.back()"><i class="fas fa-arrow-left back-icon"></i></a>
+    <ul class="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="ourteam.html">Our Team</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="setupguide.html">Sign Up Guide</a></li>
+        <li>  <a class="btn bg-green border-green text-decoration-none text-center" href="explore.html" style="border-radius: 34px; padding: 6px 32px; line-height: 30px; font-weight: 500; color: #038175;font-size: 1em  !important;">Explore Now</a>
+        </li>
+    </ul>
+</body>
+</html>

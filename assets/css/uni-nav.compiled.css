@@ -8,9 +8,39 @@ p, li {
 }
 
 #navigation-bar li {
-  font-weight: 500;
+  font-weight: lighter; /* Light font weight for inactive items */
   font-size: clamp(12px, 1.25vw, 14px);
   padding: 5px 0 !important;
+}
+
+#navigation-bar li a {
+  color: white; /* Default color for all nav items */
+}
+
+#navigation-bar li a.active {
+  font-weight: bold !important; /* Bold font weight for active item */
+}
+
+#navigation-bar li a:hover {
+  font-weight: bold; /* Bold font weight on hover */
+}
+#navigation-bar-light li {
+  font-weight: lighter; /* Light font weight for inactive items */
+  font-size: clamp(12px, 1.25vw, 14px);
+  padding: 5px 0 !important;
+}
+
+#navigation-bar-light li a {
+  color: #024C42 !important; /* Default color for all nav items */
+}
+
+#navigation-bar-light li a.active {
+  font-weight: bold !important; /* Bold font weight for active item */
+}
+
+#navigation-bar-light li a:hover {
+  font-weight: bold; /* Bold font weight on hover */
+
 }
 
 #students p, #schools p, #careers p, #team p, #contact p {
@@ -24,13 +54,10 @@ p, li {
   text-align: center;
   width: 100%;
   max-width: 200px;
-}
+}s
 
-#home {
-  width: 90%;
-  max-width: 1200px;
-  padding: 80px 20px;
-}
+
+
 
 #main-heading > div {
   max-width: 330px;
@@ -66,14 +93,65 @@ p, li {
   transform: scale(1.05);
 }
 
-#home h1 {
-  font-weight: 800;
-  font-size: clamp(24px, 4vw, 35px);
-  line-height: 1.35;
+
+#studentButton {
+  background-color: white;
+  border-color: #036E5E;
+  color: #036E5E; 
+}
+/* Hover effect */
+#studentButton:hover {
+  background-color: #036E5E;
+  border-color: #036E5E;
+  color: white;
 }
 
+/* Clicked effect */
+#studentButton:active {
+  background-color: #024C42;
+  border-color: #024C42;
+  color: white;
+}
+
+#schoolButton {
+  background-color: white;
+  border-color: #036E5E;
+  color: #036E5E; 
+}
+/* Hover effect */
+#schoolButton:hover {
+  background-color: #036E5E;
+  border-color: #036E5E;
+  color: white;
+}
+
+/* Clicked effect */
+#schoolButton:active {
+  background-color: #024C42;
+  border-color: #024C42;
+  color: white;
+}
+.timeline-divider {
+    height: 40px; /* Adjust as needed */
+}
+
+.timeline {
+    position: relative;
+}
+
+.vertical-line {
+    /* position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px; 
+    height: 100%;
+    background-color: #ccc; */
+}
+
+
+
 .images {
-  max-width: 300px;
+  /* max-width: 300px; */
 }
 
 .accordion-button {
@@ -91,18 +169,10 @@ p, li {
     max-width: 250px;
   }
 }
-@media only screen and (max-width: 1024px) {
-  #home h1 {
-    font-weight: 800;
-    font-size: clamp(25px, 4vw, 35px);
-    line-height: 1.35;
-  }
-}
+
+
 @media only screen and (max-width: 991px) {
-  #home {
-    width: 96%;
-    padding: 50px 15px;
-  }
+
 
   #students > div, #schools > div {
     padding: 15px 12px !important;
@@ -113,6 +183,8 @@ p, li {
     max-width: 190px;
   }
 }
+
+
 @media only screen and (max-width: 800px) {
   #students > div, #schools > div {
     width: 180px !important;
@@ -140,18 +212,14 @@ p, li {
     margin: 20px 0px;
   }
 
-  #home {
-    margin-top: 60px !important;
-  }
+  
 
   #faqs > div {
     width: 100% !important;
   }
 }
 @media only screen and (max-width: 470px) {
-  #home {
-    padding-top: 70px;
-  }
+  
 
   .member-name {
     font-size: 10px;

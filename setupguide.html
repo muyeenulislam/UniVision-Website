@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sign Up Guide</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/bg-color.compiled.css">
+    <link rel="stylesheet" href="assets/css/border.compiled.css">
+    <link rel="stylesheet" href="assets/css/font-sizes.compiled.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean-icons.css">
+    <link rel="stylesheet" href="assets/css/nav-styling.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styling.compiled.css">
+    <link rel="stylesheet" href="assets/css/uni-nav.compiled.css">
+</head>
+
+<body style="font-family: Montserrat, sans-serif;" data-aos-easing="ease" data-aos-delay="0" data-aos-duration="400">
+    <div class="banners" style="overflow:hidden; background-image: url('assets/img/setup.png'); background-size: cover; background-position: center;">
+
+    <section id="content" class="mx-auto" >
+        <section id="content" class="mx-auto" style="overflow:hidden; background-image: url('assets/img/careersbg.svg'); background-size: cover; background-position: center;">
+       
+            <nav class="navbar navbar-light navbar-expand-md top-0 start-0 mx-auto" id="navbar-item-2" style="width: 100%; z-index: 2000; height: 110px;">
+                <div class="container-fluid" id="nav-container" style="max-width: 1200px;">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img src="assets/img/brand-icons/univision.png" height="47px" width="196px">
+                    </a>
+                    <div class="d-flex flex-row">
+                        <div class="d-none d-md-flex me-lg-5">
+                            <ul class="navbar-nav mx-auto" id="navigation-bar-light">
+                                <li class="nav-item mx-1 mx-lg-2"><a class="nav-link text-white" href="index.html">Home</a></li>
+                                <li class="nav-item mx-1 mx-lg-2"><a class="nav-link text-white " href="careers.html">Careers</a></li>
+                                <li class="nav-item mx-1 mx-lg-2"><a class="nav-link text-white" href="ourteam.html">Our team</a></li>
+                                <li class="nav-item mx-1 mx-lg-2"><a class="nav-link text-white " href="contactus.html">Contact Us</a></li>
+                                <li class="nav-item mx-1 mx-lg-2"><a class="nav-link text-white active" href="setupguide.html">Sign Up Guide</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-none d-md-flex">
+                            <a id="explore-btn" class="btn bg-dark-green border-dark-green text-decoration-none text-center" href="explore.html" style="border-radius: 34px;padding: 6px 12px; line-height:30px;font-weight: 500;color: #fff;">Explore Now</a>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary navbar-toggler bg-default border-0 d-inline-block d-md-none" id="menu-btn-1" style="color: #038175;">
+                        <span class="visually-hidden">Toggle navigation</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                            <path d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z" fill="currentcolor"></path>
+                            <path d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z" fill="currentcolor"></path>
+                            <path d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z" fill="currentcolor"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+    
+            <script>
+                document.getElementById('menu-btn-1').addEventListener('click', function() {
+                    if (window.innerWidth < 768) {
+                        window.location.href = 'menu.html';
+                    }
+                });
+            </script>
+        
+        <section id="products" class="my-5 py-5 col-12 col-md-10 mx-auto" style="
+        margin-top: 0px !important;  ">
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                <h1 class="text-center sub-heading mt-md-5">Sign Up Guide</h1>
+                <p class="tag-line text-center pb-5 col-11 col-sm-9 mx-auto" id="taglinestudent"> <span
+                        class="light-font">For Students </span></p>
+                <p class="tag-line text-center pb-5 col-11 col-sm-9 mx-auto" id="taglineschool" style="display: none;"> <span
+                        class="light-font">For Schools </span></p>
+        
+            </div>
+
+            <div class="text-center">
+                <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                    <button id="studentButton" onclick="showMobileApp()" class="btn bg-green border-green text-decoration-none text-center" style="border-radius: 12px; padding: 6px 24px; line-height: 30px; font-weight: 500; margin: 10px;">For students</button>
+                    <button id="schoolButton" onclick="showWebApp()" class="btn bg-green border-green text-decoration-none text-center" style="border-radius: 12px; padding: 6px 24px; line-height: 30px; font-weight: 500; margin: 10px;">For Institutes</button>
+                </div>
+            </div>
+            
+            
+            <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="schoolWebSection" style="display: none;" >
+                <div class="d-flex flex-wrap justify-content-between my-5 pb-5" style="    margin-left: 15px;">
+                    <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                        <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 1:</h1>     
+                                           <h2 class="sub-heading2">Register As Partner </br>School Student</h2>
+                        <div class="d-flex flex-row">
+                            <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                            <p>Enter Required Details</p>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                            <p>If Your School Is Available In The List</p>
+                        </div><div class="d-flex flex-row">
+                            <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                            <p>Click Continue</p>
+                        </div>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="col-md-5 mx-auto" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-left"><img src="assets/img/register as school student@3x/register as school student@3x@2x.png" style="width: 100%; height: auto; max-width: 500px;  max-height: 400px;"></div>
+                
+            </section>
+
+
+            
+            <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="studentappsection">
+                <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                    <h1 class="sub-heading1" style="color: #038175; margin-top: 40px !important;    margin-left: 15px; ">Register As <br> <span style="font-weight: bold;">School</span> Student</h1>
+                </div>
+                <div class="row justify-content-center" style="margin-top: 40px !important;    margin-left: 15px;">
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column">
+                            <div class="row">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 1:</h1>
+                                    <h2 class="sub-heading2">Sign Up</h2>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                        <p>If You Are Not Registered Before</p>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                        <p>Click Sign Up</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                    <img class="images img-fluid" src="assets/img/setup/Sign up.png" style="width: 80%; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column">
+                            <div class="row">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 2:</h1>
+                                    <h2 class="sub-heading2">Register As Partner School Student</h2>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                        <p>If You Are Not Registered Before</p>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                        <p>Click Sign Up</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                    <img class="images img-fluid" src="assets/img/Register As.png" style="width: 80%; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+                <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="studentappsection1" >
+                    <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" >
+                        </div>
+                        <div class="row justify-content-center" style="margin-top: 40px !important;    margin-left: 15px;">
+                            <!-- First Section -->
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column">
+                                    <div class="row">
+                                        
+                                        <!-- Image Column -->
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <img class="images img-fluid" src="assets/img/notavailable.png" style="width: 80%; height: auto;">
+                                        </div>
+                                        <!-- Text Column -->
+                                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                                            <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 3:</h1>
+                                            <h2 class="sub-heading2">If School Is Not Available</h2>
+                                            <div class="d-flex flex-row">
+                                                <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                <p>Proceed To An Individual Student</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                    
+                            <!-- Second Section -->
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column">
+                                    <div class="row">
+                                        
+                                        <!-- Image Column -->
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <img class="images img-fluid" src="assets/img/Create Password.png" style="width: 80%; height: auto;">
+                                        </div>
+                                        <!-- Text Column -->
+                                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                                            <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 4:</h1>
+                                            <h2 class="sub-heading2">Create Password</h2>
+                                            <div class="d-flex flex-row">
+                                                <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                <p>Enter New Password</p>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                <p>Confirm New Password</p>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                <p>Click Next</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="studentappsection2" >
+                        <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" >
+                            </div>
+                            <div class="row justify-content-center" style="margin-top: 40px !important;    margin-left: 15px;">
+                                <!-- First Section -->
+                                <div class="col-md-6">
+                                    <div class="d-flex flex-column">
+                                        <div class="row">
+                                            <!-- Text Column -->
+                                            <div class="col-md-6 d-flex flex-column justify-content-center">
+                                                <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 5:</h1>
+                                                <h2 class="sub-heading2">Login To Continue</h2>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Enter Email</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Enter Password</p>
+                                                </div>
+
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Click Sign In</p>
+                                                </div>
+                                            </div>
+                                            <!-- Image Column -->
+                                            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                                <img class="images img-fluid" src="assets/img/Login/Login.png" style="width: 80%; height: auto;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                        
+                                <!-- Second Section -->
+                                <div class="col-md-6">
+                                    <!-- Content for the second section goes here -->
+                                    <div class="d-flex flex-column" >
+                                        <div class="row">
+                                            <div class="col-md-6 d-flex flex-column justify-content-center">
+                                                <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;  ">Step 6:</h1>
+                                                <h2 class="sub-heading2">Explore The App</h2>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Access 2,400+ Universities</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Try AI Recommender</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Multiple Other Features</p>
+                                                </div>
+                                            </div>  
+                                            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                                
+                                                <img class="images img-fluid" src="assets/img/Explore/Explore.png" style="width: 80%; height: auto;" >
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="studentappsection3" >
+                            <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" >
+                                <h1 class="sub-heading1" style="color: #038175; margin-top: 40px !important;    margin-left: 15px; ">Register As <br> <span style="font-weight: bold;">Individual</span> Student</h1>
+                                </div>
+                                <div class="row justify-content-center" style="margin-top: 40px !important;    margin-left: 15px;">
+                                    <!-- First Section -->
+                                    <div class="col-md-6">
+                                        <div class="d-flex flex-column">
+                                            <div class="row">
+                                                
+                                                <!-- Image Column -->
+                                                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                                    <img class="images img-fluid" src="assets/img/notavailable.png" style="width: 80%; height: auto;">
+                                                </div>
+                                                <!-- Text Column -->
+                                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                                    <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 1:</h1>
+                                                    <h2 class="sub-heading2">Register As Individual Student</h2>
+                                                    <div class="d-flex flex-row">
+                                                        <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                        <p>Enter Required Details</p>
+                                                    </div>
+                                                    <div class="d-flex flex-row">
+                                                        <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                        <p>Click Continue</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                            
+                                    <!-- Second Section -->
+                                    <div class="col-md-6">
+                                        <div class="d-flex flex-column">
+                                            <div class="row">
+                                                
+                                                <!-- Image Column -->
+                                                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                                    <img class="images img-fluid" src="assets/img/Create Password.png" style="width: 80%; height: auto;">
+                                                </div>
+                                                <!-- Text Column -->
+                                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                                    <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 2  :</h1>
+                                                    <h2 class="sub-heading2">Create Password</h2>
+                                                    <div class="d-flex flex-row">
+                                                        <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                        <p>Enter New Password</p>
+                                                    </div>
+                                                    <div class="d-flex flex-row">
+                                                        <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                        <p>Confirm New Password</p>
+                                                    </div>
+                                                    <div class="d-flex flex-row">
+                                                        <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                        <p>Click Next</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="studentappsection4" >
+                                <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" >
+                                    </div>
+
+                                    <div class="row justify-content-center" style="margin-top: 40px !important;    margin-left: 15px;">
+                                        <!-- First Section -->
+                                        <div class="col-md-6">
+                                            <div class="d-flex flex-column">
+                                                <div class="row">
+                                                    <!-- Text Column -->
+                                                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                                                        <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 5:</h1>
+                                                        <h2 class="sub-heading2">Select Your Subscription Plan</h2>
+                                                        <div class="d-flex flex-row">
+                                                            <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                            <p>Continue Using Free Trial Only</p>
+                                                    
+                                                        </div>
+                                                        <div class="d-flex flex-row">
+                                                            <p>Or</p>
+                                                        </div>
+                                                        <div class="d-flex flex-row">
+                                                            <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                            <p>Select Monthly Payment</p>
+                                                
+                                                        </div>
+                                                        <div class="d-flex flex-row">
+                                                            <p>Or</p>
+                                                        </div>
+                                                        <div class="d-flex flex-row">
+                                                            <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                            <p>Select One Time Payment</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Image Column -->
+                                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                                        <img class="images img-fluid" src="assets/img/subscribe.png" style="width: 80%; height: auto;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                
+                                        <!-- Second Section -->
+                                        <div class="col-md-6">
+                                            <!-- Content for the second section goes here -->
+                                            <div class="d-flex flex-column" >
+                                                <div class="row">
+                                                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                                                        <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;  ">Step 5:</h1>
+                                                        <h2 class="sub-heading2">Select Payment Method</h2>
+                                                        <div class="d-flex flex-row">
+                                                            <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                            <p>Credit/Debit Card</p>
+                                                        </div>
+                                                        <div class="d-flex flex-row">
+                                                            <p>Or</p>
+                                                        </div>
+                                                        <div class="d-flex flex-row">
+                                                            <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                            <p>Cash Collection On Delivery</p>
+                                                        </div>
+                                                       
+                                                    </div>  
+                                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                                        
+                                                        <img class="images img-fluid" src="assets/img/paymentmethod.png" style="width: 80%; height: auto;" >
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    
+                                </section>
+            
+                                <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="studentappsection6" >
+                                    <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" >
+                                        </div>
+                                        <div class="row justify-content-center" style="margin-top: 40px !important;    margin-left: 15px;">
+                                            <!-- First Section -->
+                                            <div class="col-md-6">
+                                                <div class="d-flex flex-column">
+                                                    <div class="row">
+                                                        
+                                                        <!-- Image Column -->
+                                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                                            <img class="images img-fluid" src="assets/img/notavailable.png" style="width: 80%; height: auto;">
+                                                        </div>
+                                                        <!-- Text Column -->
+                                                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                                                            <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 5:</h1>
+                                                            <h2 class="sub-heading2">Login To Continue</h2>
+                                                            <div class="d-flex flex-row">
+                                                                <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                                <p>Enter Email</p>
+                                                            </div>
+                                                            <div class="d-flex flex-row">
+                                                                <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                                <p>Enter Password</p>
+                                                            </div>
+
+                                                            <div class="d-flex flex-row">
+                                                                <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                                <p>Click Sign In</p>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                    
+                                            <!-- Second Section -->
+                                            <div class="col-md-6">
+                                                <div class="d-flex flex-column">
+                                                    <div class="row">
+                                                        
+                                                        <!-- Image Column -->
+                                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                                            <img class="images img-fluid" src="assets/img/Create Password.png" style="width: 80%; height: auto;">
+                                                        </div>
+                                                        <!-- Text Column -->
+                                                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                                                            <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 6:</h1>
+                                                            <h2 class="sub-heading2">Explore The App</h2>
+                                                            <div class="d-flex flex-row">
+                                                                <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                                <p>Access 2,400+ Universities</p>
+                                                            </div>
+                                                            <div class="d-flex flex-row">
+                                                                <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                                <p>Try AI Recommender</p>
+                                                            </div>
+                                                            <div class="d-flex flex-row">
+                                                                <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                                <p>Multiple Other Features</p>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="schoolWebSection1" style="display: none;">
+
+                                        <div class="d-flex flex-wrap justify-content-between my-5 pb-5" style="    margin-left: 15px;">
+                                            <div class="col-md-5 mx-auto" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-left"><img src="assets/img/cant see your school@3x/cant see your school@3x@2x.png" style="width: 100%; height: auto; max-width: 500px;  max-height: 400px;"></div>
+
+                                            <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                                                <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 2:</h1>                        
+                                                <h2 class="sub-heading2">If School Is Not Available</h2>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>If School Is Not Available</p>
+                                                </div>
+                                               
+                                            </div>
+                    
+                                        
+                                    </section>
+
+                                    <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="schoolWebSection2" style="display: none;">
+
+                                        <div class="d-flex flex-wrap justify-content-between my-5 pb-5" style="    margin-left: 15px;">
+
+                                            <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                                                <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 3:</h1>                        
+                                                <h2 class="sub-heading2">Change Password</h2>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Enter New Password</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Confirm New Password</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Click Next</p>
+                                                </div>
+                                               
+                                            </div>
+
+                                            <div class="col-md-5 mx-auto" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-left"><img src="assets/img/register as school student@3x (1)/changepasschool.png" style="width: 100%; height: auto; max-width: 500px;  max-height: 400px;"></div>
+                    
+                                        
+                                    </section>
+
+                                    <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="schoolWebSection3" style="display: none;">
+
+                                        <div class="d-flex flex-wrap justify-content-between my-5 pb-5" style="    margin-left: 15px;">
+                                            <div class="col-md-5 mx-auto" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-left"><img src="assets/img/loginas/loginschool.png" style="width: 100%; height: auto; max-width: 500px;  max-height: 400px;"></div>
+
+                                            <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                                                <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 4:</h1>                        
+                                                <h2 class="sub-heading2">Login To Continue</h2>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Enter Email</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Enter Password</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Click Sign In</p>
+                                                </div>
+                                               
+                                            </div>
+                    
+                                        
+                                    </section>
+
+                                    <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="schoolWebSection4" style="display: none;">
+                                        <h1 class="sub-heading1" style="color: #038175; margin-top: 40px !important;  margin-left: 15px;">Register As <br> <span style="font-weight: bold;">Individual</span> Student</h1>
+
+                                        <div class="d-flex flex-wrap justify-content-between my-5 pb-5">
+
+                                            <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" style="    margin-left: 15px;">
+
+                                                <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 1:</h1>                        
+                                                <h2 class="sub-heading2">Register As Individual Student</h2>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Enter Required Details</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Click Continue</p>
+                                                </div>
+                                                
+                                               
+                                            </div>
+
+                                            <div class="col-md-5 mx-auto" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-left"><img src="assets/img/register as school student@3x (2)/regschoolstu.png" style="width: 100%; height: auto; max-width: 500px;  max-height: 400px;"></div>
+                    
+                                        
+                                    </section>
+
+                                    <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="schoolWebSection5" style="display: none;">
+
+                                        <div class="d-flex flex-wrap justify-content-between my-5 pb-5" style="    margin-left: 15px;">
+                                            <div class="col-md-5 mx-auto" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-left"><img src="assets/img/cant see your school@3x 2/schoolpass.png" style="width: 100%; height: auto; max-width: 500px;  max-height: 400px;"></div>
+
+                                            <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                                                <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 4:</h1>                        
+                                                <h2 class="sub-heading2">Login To Continue</h2>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Enter Email</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Enter Password</p>
+                                                </div>
+                                                <div class="d-flex flex-row">
+                                                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                                                    <p>Click Sign In</p>
+                                                </div>
+                                               
+                                            </div>
+
+    </section>
+
+    <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="schoolWebSection6" style="display: none;">
+
+        <div class="d-flex flex-wrap justify-content-between my-5 pb-5" style="    margin-left: 15px;">
+
+            <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+
+                <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 3 :</h1>                        
+                <h2 class="sub-heading2">Select Your Subscription Plan</h2>
+                <div class="d-flex flex-row">
+                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                    <p>Continue Using Free Trial Only</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <p>Or</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                    <p>Select Monthly Payment</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <p>Or</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                    <p>Select One Time Payment</p>
+                </div>
+                
+               
+            </div>
+
+            <div class="col-md-5 mx-auto" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-left"><img src="assets/img/schoolsub/schoolsub.png" style="width: 100%; height: auto; max-width: 500px;  max-height: 400px;"></div>
+
+        
+    </section>
+
+    <section class="my-3 my-md-5 col-12 col-md-10 mx-auto" id="schoolWebSection7" style="display: none;">
+
+        <div class="d-flex flex-wrap justify-content-between my-5 pb-5" style="    margin-left: 15px;">
+            <div class="col-md-5 mx-auto" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-left"><img src="assets/img/cant see your school@3x 2/schoolpass.png" style="width: 100%; height: auto; max-width: 500px;  max-height: 400px;"></div>
+
+            <div class="col-11 col-md-6 my-auto mx-auto me-md-0 ms-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+                <h1 class="sub-heading" style="color: #038175; margin-bottom: 20px !important;">Step 4:</h1>                        
+                <h2 class="sub-heading2">Select Payment Method</h2>
+                <div class="d-flex flex-row">
+                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                    <p>Credit/Debit Card</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <span><i class="far fa-check-circle me-2 mt-1" style="color: #038175; font-size: 19px;"></i></span>
+                    <p>Cash Collection On Delivery</p>
+                </div>
+               
+            </div>
+
+</section>
+
+                <script>
+    function showMobileApp() {
+        document.getElementById("schoolWebSection").style.display = "none";
+        document.getElementById("schoolWebSection1").style.display = "none";
+        document.getElementById("schoolWebSection2").style.display = "none";
+        document.getElementById("schoolWebSection3").style.display = "none";
+        document.getElementById("schoolWebSection4").style.display = "none";
+        document.getElementById("schoolWebSection5").style.display = "none";
+        document.getElementById("schoolWebSection6").style.display = "none";
+        document.getElementById("schoolWebSection7").style.display = "none";
+
+
+
+
+
+        document.getElementById("studentappsection").style.display = "block";
+        document.getElementById("studentappsection1").style.display = "block";
+        document.getElementById("studentappsection2").style.display = "block";
+        document.getElementById("studentappsection3").style.display = "block";
+        document.getElementById("studentappsection4").style.display = "block";
+        document.getElementById("studentappsection6").style.display = "block";
+        // Hide school web section and tagline
+        document.getElementById("taglineschool").style.display = "none";
+        
+        // Show student web section and tagline
+        document.getElementById("taglinestudent").style.display = "block";
+
+        
+    }
+
+    function showWebApp() {
+        document.getElementById("studentappsection").style.display = "none";
+        document.getElementById("studentappsection1").style.display = "none";
+        document.getElementById("studentappsection2").style.display = "none";
+        document.getElementById("studentappsection3").style.display = "none";
+        document.getElementById("studentappsection4").style.display = "none";
+        document.getElementById("studentappsection6").style.display = "none";
+        document.getElementById("schoolWebSection").style.display = "block";
+        document.getElementById("schoolWebSection1").style.display = "block";
+        document.getElementById("schoolWebSection2").style.display = "block";
+        document.getElementById("schoolWebSection3").style.display = "block";
+        document.getElementById("schoolWebSection4").style.display = "block";
+        document.getElementById("schoolWebSection5").style.display = "block";
+        document.getElementById("schoolWebSection6").style.display = "block";
+        document.getElementById("schoolWebSection7").style.display = "block";
+
+
+
+
+
+
+
+        // Hide student web section and tagline
+
+        document.getElementById("taglinestudent").style.display = "none";
+        
+        // Show school web section and tagline
+
+        document.getElementById("taglineschool").style.display = "block";
+    }
+</script>
+                
+                
+        
+<footer class="footer" style="margin-top: 50px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <img src="assets/img/brand-icons/univision.svg" alt="Your Logo" class="footer-logo mb-3">
+                <p class="text-center mb-3"><span class="light-font">Your Dream, Our Responsibility</span></p>
+                <div class="d-flex justify-content-center">
+                    <img class="me-3 img-fluid" src="assets/img/brand-icons/google%20play.png" style="max-width: 120px; cursor:pointer;">
+                    <img class="img-fluid" src="assets/img/brand-icons/app%20store.png" style="max-width: 120px; cursor:pointer;">
+                </div>
+            </div>
+            
+            
+            
+            
+            <div class="col-md-3">
+                <div class="about-content">
+                <h5>Our Officess</h5>
+                <p><span class="light-font">36-21, Central Park Towers - DIFC</span> <strong class="bold-font">Dubai, UAE</strong></p>
+                <p><span class="light-font">CraftLab Asia, Plaza Hamodal,<br> Ground Floor, Petaling Jaya, </span> <strong class="bold-font">Selangor, Malaysia</strong></p>
+                <p><span class="light-font">99 E, Block 2 P.E.C.H.S.,</span> <strong class="bold-font">Karachi, Pakistan</strong></p>
+        
+            </div>
+            </div>
+            <div class="col-md-3">
+                <div class="about-content">
+                <h5>Contact Us</h5>
+               <p> <span class="light-font"><a href="rpivacypolicy.html" style="color: #fff;">Privacy Policy</a></span></p>
+               <p> <span class="light-font "><a href="termsconditon.html" style="color: #fff;">Terms And Conditions</a></span></p>
+            </div>
+            </div>
+            <div class="col-md-3" style="text-align: left;">
+                <h5>Follow Us</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="social-link" style="color: #fff;">
+                            <i class="fab fa-facebook"></i>
+                            <span class="social-handle">FacebookHandle</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="social-link" style="color: #fff;">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-handle">TwitterHandle</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="social-link" style="color: #fff;">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-handle">InstagramHandle</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                
+                
+                
+                <h5 style="margin-top: 40px;">Contact Us</h5>
+                <p><a href="https://wa.me/971585399043" style="color: #fff;"><i class="fa fa-phone" style="margin-right: 5px;"></i> <span class="light-font">+971 58 539 9043</span></a>
+                </p>
+                <p><a href="mailto:admin@univision.hk" style="color: #fff";><i class="fa fa-envelope" style="margin-right: 5px;"></i> <span class="light-font">admin@univision.hk</span></a>
+                </p>
+                
+            
+            </div>
+            
+                </div>                           
+            </div>  
+        </div>
+        </div>
+    </div>
+    <div class="footer-bottom text-center py-3">    
+        <div class="container">
+            <p style="text-align: center;"> <span class="light-font ">Copyright &copy; UniVision 2024. All rights reserved.</span></p>
+        </div>
+    </div>
+</footer>
+            
+    </footer><a id="up-btn" class="back-to-top d-none" href="#content"><i class="fas fa-arrow-up" style="font-size: 17px;"></i></a>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/homepage.js"></script>
+    <script src="https://unpkg.com/ityped@0.0.10"></script>
+    <script src="assets/js/NavigationMenu.js"></script>
+</body>
+
+</html>

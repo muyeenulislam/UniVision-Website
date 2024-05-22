@@ -1,20 +1,33 @@
 .active {
-  color: #038175 !important;
+  color: WHITE !important;
   font-weight: bolder !important;
 }
 
+#explore-btn:hover {
+  color: #038175 !important; /* Change to your desired hover color */
+}
+
 .btn-primary.bg-green:hover, a.btn.bg-green:hover {
-  background-color: white;
-  color: #038175 !important;
+  background-color: #038175;
+  color: white !important;
   border-color: #038175;
 }
 
+.btn-primary.bg-green {
+  background-color: white;
+  color: #038175 !important;
+  border-color: white;
+}
 #meet-team-btn:hover {
   box-shadow: 0 4px 10px rgb(0 0 0 / 30%) !important;
 }
 
+#meet-team-btn {
+color: #038175;
+}
+
 [id^='menu-btn']:hover, [id^='menu-btn']:active, [id^='menu-btn']:focus {
-  color: #038175 !important;
+  color: white !important;
   background-color: initial !important;
 }
 
