@@ -43,18 +43,7 @@ p, li {
 
 }
 
-#students p, #schools p, #careers p, #team p, #contact p {
-  font-weight: 600;
-}
 
-#students h1, #schools h1 {
-  font-weight: 800;
-  font-size: clamp(13px, 2vw, 15px);
-  margin: 30px auto 20px;
-  text-align: center;
-  width: 100%;
-  max-width: 200px;
-}s
 
 
 
@@ -174,10 +163,7 @@ p, li {
 @media only screen and (max-width: 991px) {
 
 
-  #students > div, #schools > div {
-    padding: 15px 12px !important;
-    width: 200px !important;
-  }
+ 
 
   .images {
     max-width: 190px;
@@ -186,9 +172,7 @@ p, li {
 
 
 @media only screen and (max-width: 800px) {
-  #students > div, #schools > div {
-    width: 180px !important;
-  }
+
 
   #team-wrapper div {
     max-width: calc(100%/2 - 5px);
@@ -204,13 +188,7 @@ p, li {
   }
 }
 @media only screen and (max-width: 650px) {
-  #students > div, #schools > div {
-    padding: 15px 12px !important;
-    width: 90% !important;
-    max-height: 350px !important;
-    height: auto !important;
-    margin: 20px 0px;
-  }
+
 
   
 

@@ -248,17 +248,45 @@ footer strong {
   color: White   !important;
 }
 
+
+
+
+#navbar-item-2 {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+#students .feature-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(20% - 40px);
+  max-width: 260px;
+  height: auto; /* Change height to auto */
+  min-height: 400px; /* Set a minimum height */
+  border-radius: 40px;
+  padding: 25px 20px;
+  margin-bottom: 20px; /* Added margin-bottom for spacing between feature boxes */
+}
+
 #students p, #schools p, .careers p, #team p, .contact p {
   font-weight: 600;
+  text-align: center;
+  margin-top: 20px; /* Ensure consistent gap between heading and paragraph */
 }
 
 #students h1, #schools h1 {
   font-weight: 800;
   font-size: clamp(13px, 2vw, 15px);
-  margin: 30px auto 20px;
+  margin: 30px auto 0; /* Adjusted margin-bottom to 0 for h1 */
   text-align: center;
   width: 100%;
   max-width: 200px;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .banners {
@@ -279,6 +307,13 @@ footer strong {
     #home {
         margin-top: 120px;
     }
+
+    @media only screen and (max-width: 768px) {
+      #home .btn {
+          margin-top: 20px; /* Add some margin to the top for better spacing on small screens */
+      }
+  }
+  
     
     #main-heading h1 {
         color: white;
@@ -584,11 +619,16 @@ textarea {
   }
 }
 
-
+@media only screen and (min-width: 1200px) {
+  #students .feature-box {
+    min-height: 460px; /* Adjust the minimum height for larger screens */
+    min-width: 258px;
+  }
+}
 
 @media only screen and (max-width: 991px) {
 
-  #students > div, #schools > div {
+  #students .feature-box, #schools .feature-box {
     padding: 15px 12px !important;
     width: 200px !important;
   }
@@ -602,7 +642,7 @@ textarea {
   }
 }
 @media only screen and (max-width: 800px) {
-  #students > div, #schools > div {
+  #students .feature-box, #schools .feature-box {
     width: 180px !important;
   }
 
@@ -626,7 +666,7 @@ textarea {
   }
 }
 @media only screen and (max-width: 650px) {
-  #students > div, #schools > div {
+  #students .feature-box, #schools .feature-box {
     padding: 15px 12px !important;
     width: 90% !important;
     max-height: 350px !important;

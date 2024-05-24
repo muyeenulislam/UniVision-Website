@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/styling.compiled.css">
     <link rel="stylesheet" href="assets/css/uni-nav.compiled.css">
+    <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
 </head>
 
 <body style="font-family: Montserrat, sans-serif;" data-aos-easing="ease" data-aos-delay="0" data-aos-duration="400">
@@ -24,10 +25,10 @@
         <section id="content" class="mx-auto">
             <nav class="navbar navbar-light navbar-expand-md top-0 start-0 mx-auto" id="dark-navbar" style="width: 100%; z-index: 2000; height: 110px;">
                 <div class="container-fluid" id="nav-container" style="max-width: 1200px;">
-                    <a class="navbar-brand d-flex align-items-center" href="#">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
                         <img src="assets/img/brand-icons/univision.svg" height="47px" width="196px">
                     </a>
-                    <div class="d-flex flex-row">
+                    <div class="d-flex flex-row align-items-center ms-auto">
                         <div class="d-none d-md-flex me-lg-5">
                             <ul class="navbar-nav mx-auto" id="navigation-bar">
                                 <li class="nav-item mx-1 mx-lg-2"><a class="nav-link text-white active" href="index.html">Home</a></li>
@@ -37,8 +38,8 @@
                                 <li class="nav-item mx-1 mx-lg-2"><a class="nav-link text-white" href="setupguide.html">Sign Up Guide</a></li>
                             </ul>
                         </div>
-                        <div class="d-none d-md-flex">
-                            <a class="btn bg-green border-green text-decoration-none text-center" href="explore.html" style="border-radius: 34px; padding: 6px 12px; line-height: 30px; font-weight: 500; color: #038175;">Explore Now</a>
+                        <div class="d-none d-md-flex align-items-center">
+                            <a class="btn bg-green border-green text-decoration-none text-center" href="explore.html" style="border-radius: 34px;padding: 4px 21px;font-size: 14px;line-height: 30px;font-weight: 300; color: #038175;">Explore Now</a>
                         </div>
                     </div>
                     <button class="btn btn-primary navbar-toggler bg-default border-0 d-inline-block d-md-none" id="menu-btn-1" style="color: #038175;">
@@ -51,6 +52,7 @@
                     </button>
                 </div>
             </nav>
+            
     
             <script>
                 document.getElementById('menu-btn-1').addEventListener('click', function() {
@@ -66,14 +68,17 @@
                     <h1>Your Dream, Our Responsibility</h1>
                 </div>
                 <p class="text-18 mt-4" style="color: white;">UniVision is aimed at developing a centralized platform that provides all relevant information to students in selecting colleges to apply to, while simultaneously providing their school counselors with a dynamic platform to oversee this process.</p>
-                <div class="d-none d-md-flex">
-                    <a class="btn bg-green border-green text-decoration-none text-center" href="https://student.univision.hk/login" style="border-radius: 12px; padding: 6px 24px; line-height:30px; font-weight: 500; color: #038175;">Get Started</a>
+                <div class="d-flex">
+                    <a class="btn bg-green border-green text-decoration-none text-center" href="https://student.univision.hk/login" target="_blank" style="border-radius: 12px; padding: 6px 24px; line-height:30px; font-weight: 500; color: #038175;">Get Started</a>
                 </div>
+                
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center mx-auto mx-lg-0 mt-4 mt-md-0">
                 <img id="video-poster" class="images" src="assets/img/mockup1.png" alt="Mockup Image" style="width: 100%; height: auto;">
             </div>
         </section>
+        
+        
     </div>
 
         <section id="products" class="my-5 py-5 col-12 col-md-10 mx-auto">
@@ -180,11 +185,14 @@
                      function showMobileApp() {
                 // Hide school web section
                 document.getElementById("schoolWebSection").style.display = "none";
+                 AOS.refresh();
+                
             }
 
                 function showWebApp() {
                     // Show school web section
                     document.getElementById("schoolWebSection").style.display = "block";
+                    AOS.refresh();
                 }
 
             </script>
@@ -195,33 +203,33 @@
                     <p class="text-center">A Centralized Ecosystem For Students</p>
                 </div>
                 <div id="students" class="mx-auto d-flex justify-content-around flex-wrap text-center" style="max-width:1400px;">
-                    <div class="d-inline-block border-light-blue py-2 my-3 mx-auto mx-md-0" style="width: calc(20% - 40px); max-width: 230px;height:400px;border-radius: 40px;padding: 25px 20px;">
+                    <div class="d-inline-block border-light-blue py-2 my-3 mx-auto mx-md-0 feature-box">
                         <img class="mt-4" src="assets/img/homepage/students-core-features/innovation.png">
-                        <h1 class="px-4 mt-5">FASTER PROCESS</h1>
+                        <h1 class="px-4 mt-5">Faster Process</h1>
                         <p>With our comprehensive data-driven college profiles, students save countless hours of work researching each individual university</p>
                     </div>
-                    <div class="d-inline-block border-light-wheat py-2 my-3 mx-auto mx-md-0" style="width: calc(20% - 40px); max-width: 230px;height:400px;border-radius: 40px; padding: 25px 20px;">
+                    <div class="d-inline-block border-light-wheat py-2 my-3 mx-auto mx-md-0 feature-box">
                         <img class="mt-4" src="assets/img/homepage/students-core-features/touch.png">
-                        <h1 class="px-3 px-md-5 mt-5">EASE OF ACCESS</h1>
+                        <h1 class="px-3 px-md-5 mt-5">Ease of Access</h1>
                         <p>Students can easily access the complete information regarding admissions for any university on our portal</p>
                     </div>
-                    <div class="d-inline-block border-light-blue py-2 my-3 mx-auto mx-md-0" style="width: calc(20% - 40px); max-width: 230px; height:400px;border-radius: 40px;">
+                    <div class="d-inline-block border-light-blue py-2 my-3 mx-auto mx-md-0 feature-box">
                         <img class="mt-4" src="assets/img/homepage/students-core-features/surface1.png">
-                        <h1 class="px-lg-3 mt-5">CENTRALIZED IN ONE PLATFORM</h1>
-                        <p>With only just a few clicks, students can find carefully curated profiles for 1000+ universities under a single centralized platform</p>
+                        <h1 class="px-lg-3 mt-5">Centralized In <br>One Platform</h1>
+                        <p>With only just a few clicks, students can find carefully curated profiles for 2400+ universities under a single centralized platform</p>
                     </div>
-                    <!-- Add two more similar divs for the remaining sections -->
-                    <div class="d-inline-block border-light-wheat py-2 my-3 mx-auto mx-md-0" style="width: calc(20% - 40px); max-width: 230px; height:400px;border-radius: 40px; padding: 25px 20px;">
-                        <img class="mt-4" src="assets/img/homepage/students-core-features/touch.png">
-                        <h1 class="px-3 px-md-5 mt-5">EASE OF ACCESS</h1>
-                        <p>Students can easily access the complete information regarding admissions for any university on our portal</p>
+                    <div class="d-inline-block border-light-wheat py-2 my-3 mx-auto mx-md-0 feature-box">
+                        <img class="mt-4" src="assets/img/lateral-thinking.svg">
+                        <h1 class="px-3 px-md-5 mt-5">Proprietary AI <br>Solutions</h1>
+                        <p>Our AI recommendations help students discover universities that align with their academic and career goals, ensuring a targeted approach in university selection.</p>
                     </div>
-                    <div class="d-inline-block border-light-blue py-2 my-3 mx-auto mx-md-0" style="width: calc(20% - 40px); max-width: 230px; height:400px;border-radius: 40px;">
-                        <img class="mt-4" src="assets/img/homepage/students-core-features/surface1.png">
-                        <h1 class="px-lg-3 mt-5">CENTRALIZED IN ONE PLATFORM</h1>
-                        <p>With only just a few clicks, students can find carefully curated profiles for 1000+ universities under a single centralized platform</p>
+                    <div class="d-inline-block border-light-blue py-2 my-3 mx-auto mx-md-0 feature-box">
+                        <img class="mt-4" src="assets/img/online-learning.svg">
+                        <h1 class="px-lg-3 mt-5">Interactive<br> Learning</h1>
+                        <p>Our platform hosts a variety of Udemy paid and free courses, catering to diverse interests and educational needs, enhancing learning effectiveness and enjoyment.</p>
                     </div>
                 </div>
+                
                 
             </div>
             <div>
@@ -229,85 +237,82 @@
         </section>
         
         
-            <footer class="footer" style="margin-top: 50px;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                            <img src="assets/img/brand-icons/univision.svg" alt="Your Logo" class="footer-logo mb-3">
-                            <p class="text-center mb-3"><span class="light-font">Your Dream, Our Responsibility</span></p>
-                            <div class="d-flex justify-content-center">
-                                <img class="me-3 img-fluid" src="assets/img/brand-icons/google%20play.png" style="max-width: 120px; cursor:pointer;">
-                                <img class="img-fluid" src="assets/img/brand-icons/app%20store.png" style="max-width: 120px; cursor:pointer;">
-                            </div>
+        <footer class="footer" style="margin-top: 50px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <img src="assets/img/brand-icons/univision.svg" alt="Your Logo" class="footer-logo mb-3">
+                        <p class="text-center mb-3"><span class="light-font">Your Dream, Our Responsibility</span></p>
+                        <div class="d-flex justify-content-center">
+                            <img class="me-3 img-fluid" src="assets/img/brand-icons/google%20play.png" style="max-width: 120px; cursor:pointer;">
+                            <img class="img-fluid" src="assets/img/brand-icons/app%20store.png" style="max-width: 120px; cursor:pointer;">
                         </div>
-                        
-                        
-                        
-                        
-                        <div class="col-md-3">
-                            <div class="about-content">
-                            <h5>Our Officess</h5>
-                            <p><span class="light-font">36-21, Central Park Towers - DIFC</span> <strong class="bold-font">Dubai, UAE</strong></p>
-                            <p><span class="light-font">CraftLab Asia, Plaza Hamodal,<br> Ground Floor, Petaling Jaya, </span> <strong class="bold-font">Selangor, Malaysia</strong></p>
-                            <p><span class="light-font">99 E, Block 2 P.E.C.H.S.,</span> <strong class="bold-font">Karachi, Pakistan</strong></p>
+                    </div>
                     
-                        </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="about-content">
-                            <h5>Contact Us</h5>
-                           <p> <span class="light-font"><a href="rpivacypolicy.html" style="color: #fff;">Privacy Policy</a></span></p>
-                           <p> <span class="light-font "><a href="termsconditon.html" style="color: #fff;">Terms And Conditions</a></span></p>
-                        </div>
-                        </div>
-                        <div class="col-md-3" style="text-align: left;">
-                            <h5>Follow Us</h5>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="#" class="social-link" style="color: #fff;">
-                                        <i class="fab fa-facebook"></i>
-                                        <span class="social-handle">FacebookHandle</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="social-link" style="color: #fff;">
-                                        <i class="fab fa-twitter"></i>
-                                        <span class="social-handle">TwitterHandle</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="social-link" style="color: #fff;">
-                                        <i class="fab fa-instagram"></i>
-                                        <span class="social-handle">InstagramHandle</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            
-                            
-                            
-                            
-                            <h5 style="margin-top: 40px;">Contact Us</h5>
-                            <p><a href="https://wa.me/971585399043" style="color: #fff;"><i class="fa fa-phone" style="margin-right: 5px;"></i> <span class="light-font">+971 58 539 9043</span></a>
-                            </p>
-                            <p><a href="mailto:admin@univision.hk" style="color: #fff";><i class="fa fa-envelope" style="margin-right: 5px;"></i> <span class="light-font">admin@univision.hk</span></a>
-                            </p>
-                            
+                    
+                    
+                    
+                    <div class="col-md-3">
+                        <div class="about-content">
+                        <h5>Our Offices</h5>
+                        <p><span class="light-font">36-21, Central Park Towers - DIFC</span> <strong class="bold-font">Dubai, UAE</strong></p>
+                        <p><span class="light-font">CraftLab Asia, Plaza Hamodal,<br> Ground Floor, Petaling Jaya, </span> <strong class="bold-font">Selangor, Malaysia</strong></p>
+                        <p><span class="light-font">99 E, Block 2 P.E.C.H.S.,</span> <strong class="bold-font">Karachi, Pakistan</strong></p>
+                
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="about-content">
+                        <h5>Contact Us</h5>
+                       <p> <span class="light-font"><a href="rpivacypolicy.html" style="color: #fff;text-decoration: none;">Privacy Policy</a></span></p>
+                       <p> <span class="light-font "><a href="termsconditon.html" style="color: #fff;text-decoration: none;">Terms And Conditions</a></span></p>
+                    </div>
+                    </div>
+                    <div class="col-md-3" style="text-align: left;">
+                        <h5>Follow Us</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="social-link" style="color: #fff;text-decoration: none;">
+                                    <i class="fab fa-facebook"></i>
+                                    <span class="social-handle">FacebookHandle</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="social-link" style="color: #fff;text-decoration: none;">
+                                    <i class="fab fa-twitter"></i>
+                                    <span class="social-handle">TwitterHandle</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="social-link" style="color: #fff;text-decoration: none;">
+                                    <i class="fab fa-instagram"></i>
+                                    <span class="social-handle">InstagramHandle</span>
+                                </a>
+                            </li>
+                        </ul>
                         
-                        </div>
                         
-                            </div>                           
-                        </div>  
+                        
+                        
+                        <h5 style="margin-top: 40px;">Contact Us</h5>
+                        <p><a href="https://wa.me/971585399043" style="color: #fff; text-decoration: none;"><i class="fa fa-phone" style="margin-right: 5px;"></i> <span class="light-font">+971 58 539 9043</span></a></p>
+                        <p><a href="mailto:admin@univision.hk" style="color: #fff; text-decoration: none;"><i class="fa fa-envelope" style="margin-right: 5px;"></i> <span class="light-font">admin@univision.hk</span></a></p>
+                        
+                        
+                    
                     </div>
-                    </div>
+                    
+                        </div>                           
+                    </div>  
                 </div>
-                <div class="footer-bottom text-center py-3">    
-                    <div class="container">
-                        <p style="text-align: center;"> <span class="light-font ">Copyright &copy; UniVision 2024. All rights reserved.</span></p>
-                    </div>
                 </div>
-            </footer>
-            
-    </footer><a id="up-btn" class="back-to-top d-none" href="#content"><i class="fas fa-arrow-up" style="font-size: 17px;"></i></a>
+            </div>
+            <div class="footer-bottom text-center py-3">    
+                <div class="container">
+                    <p style="text-align: center;"> <span class="light-font ">Copyright &copy; UniVision 2024. All rights reserved.</span></p>
+                </div>
+            </div>
+        </footer><a id="up-btn" class="back-to-top d-none" href="#content"><i class="fas fa-arrow-up" style="font-size: 17px;"></i></a>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/aos.js"></script>
