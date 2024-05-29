@@ -1,0 +1,213 @@
+strong {
+  font-size: clamp(13px, 1.25vw, 15px);
+}
+
+p, li {
+  font-size: clamp(13px, 1.25vw, 15px);
+  font-weight: 500;
+}
+
+#navigation-bar li {
+  font-weight: lighter; /* Light font weight for inactive items */
+  font-size: clamp(12px, 1.25vw, 14px);
+  padding: 5px 0 !important;
+}
+
+#navigation-bar li a {
+  color: white; /* Default color for all nav items */
+}
+
+#navigation-bar li a.active {
+  font-weight: bold !important; /* Bold font weight for active item */
+}
+
+#navigation-bar li a:hover {
+  font-weight: bold; /* Bold font weight on hover */
+}
+#navigation-bar-light li {
+  font-weight: lighter; /* Light font weight for inactive items */
+  font-size: clamp(12px, 1.25vw, 14px);
+  padding: 5px 0 !important;
+}
+
+#navigation-bar-light li a {
+  color: #024C42 !important; /* Default color for all nav items */
+}
+
+#navigation-bar-light li a.active {
+  font-weight: bold !important; /* Bold font weight for active item */
+}
+
+#navigation-bar-light li a:hover {
+  font-weight: bold; /* Bold font weight on hover */
+
+}
+
+
+
+
+
+
+#main-heading > div {
+  max-width: 330px;
+}
+
+.sub-heading {
+  font-weight: 800;
+  font-size: clamp(20px, 3vw, 32px);
+  margin-bottom: 10px;
+}
+
+.tag-line {
+  font-weight: 700;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.member-name {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.member-title {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+#team-wrapper > div {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#team-wrapper > div:hover {
+  transform: scale(1.05);
+}
+
+
+#studentButton {
+  background-color: white;
+  border-color: #036E5E;
+  color: #036E5E; 
+}
+/* Hover effect */
+#studentButton:hover {
+  background-color: #036E5E;
+  border-color: #036E5E;
+  color: white;
+}
+
+/* Clicked effect */
+#studentButton:active {
+  background-color: #024C42;
+  border-color: #024C42;
+  color: white;
+}
+
+#schoolButton {
+  background-color: white;
+  border-color: #036E5E;
+  color: #036E5E; 
+}
+/* Hover effect */
+#schoolButton:hover {
+  background-color: #036E5E;
+  border-color: #036E5E;
+  color: white;
+}
+
+/* Clicked effect */
+#schoolButton:active {
+  background-color: #024C42;
+  border-color: #024C42;
+  color: white;
+}
+.timeline-divider {
+    height: 40px; /* Adjust as needed */
+}
+
+.timeline {
+    position: relative;
+}
+
+.vertical-line {
+    /* position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px; 
+    height: 100%;
+    background-color: #ccc; */
+}
+
+
+
+.images {
+  /* max-width: 300px; */
+}
+
+.accordion-button {
+  font-weight: 800;
+  font-size: clamp(12px, 2vw, 14px) !important;
+}
+
+.accordion-body p, .accordion-body li {
+  font-weight: 400;
+  font-size: clamp(12px, 2vw, 14px);
+}
+
+@media only screen and (max-width: 1400px) {
+  .images {
+    max-width: 250px;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+
+
+ 
+
+  .images {
+    max-width: 190px;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+  #team-wrapper div {
+    max-width: calc(100%/2 - 5px);
+  }
+
+  #main-heading > div {
+    max-width: 250px;
+  }
+
+  .nav-link {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+}
+@media only screen and (max-width: 650px) {
+
+
+  
+
+  #faqs > div {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 470px) {
+  
+
+  .member-name {
+    font-size: 10px;
+  }
+
+  .member-title {
+    font-size: 9px;
+  }
+
+  #join-img {
+    max-width: 250px !important;
+  }
+}

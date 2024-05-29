@@ -1,0 +1,18 @@
+.border-green {
+  border: 1px solid #038175;
+}
+.border-dark-green {
+  border: 1px solid #026C62 !important;
+}
+
+.border-blue {
+  border: 1px solid #007D8E;
+}
+
+.border-light-blue {
+  border: 2px solid #038176;
+}
+
+.border-light-wheat {
+  border: 2px solid #BBD055;
+}

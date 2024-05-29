@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/bg-color.compiled.css">
+    <link rel="stylesheet" href="assets/css/styling.compiled.css">
+
+    <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
+
 
 
     <style>
@@ -43,18 +47,64 @@
             top: 30px; /* Added */
             left: 30px; /* Added */
         }
+
+        .transition-containers {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
+        z-index: 3000;
+    }
+
+    .transition-containers.slide-in {
+        transform: translateX(0);
+    }
+
+    .transition-containers.transparent-bg {
+        background: transparent;
+    }
+
     </style>
 </head>
 <body>
-    <a href="#" class="back-button" onclick="window.history.back()"><i class="fas fa-arrow-left back-icon"></i></a>
+    <div id="transition-containers" class="transition-containers"></div>
+    <a class="back-button" onclick="window.history.back();"><i class="fas fa-arrow-left back-icon"></i></a>
     <ul class="menu-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="careers.html">Careers</a></li>
         <li><a href="ourteam.html">Our Team</a></li>
         <li><a href="contactus.html">Contact Us</a></li>
         <li><a href="setupguide.html">Sign Up Guide</a></li>
-        <li>  <a class="btn bg-green border-green text-decoration-none text-center" href="explore.html" style="border-radius: 34px; padding: 6px 32px; line-height: 30px; font-weight: 500; color: #038175;font-size: 1em  !important;">Explore Now</a>
+        <li>
+            <a class="btn bg-green border-green text-decoration-none text-center" href="explore.html" style="border-radius: 34px; padding: 6px 32px; line-height: 30px; font-weight: 500; color: #038175;font-size: 1em  !important;">Explore Now</a>
         </li>
     </ul>
+
+    <script>
+        // Add transition class when clicking the back button
+        document.querySelector('.back-button').addEventListener('click', function() {
+            document.getElementById('transition-containers').classList.add('transparent-bg');
+            setTimeout(function() {
+                window.history.back();
+            }, 500); // Adjust the timeout duration to match the transition duration
+        });
+    
+        // Remove background color transition class when the menu page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('transition-containers').classList.remove('bg-color-transition');
+        });
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
 </body>
+
 </html>
