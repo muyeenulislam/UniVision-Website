@@ -95,12 +95,7 @@ p, li {
   color: white;
 }
 
-/* Clicked effect */
-#studentButton:active {
-  background-color: #024C42;
-  border-color: #024C42;
-  color: white;
-}
+
 
 #schoolButton {
   background-color: white;
@@ -114,12 +109,21 @@ p, li {
   color: white;
 }
 
-/* Clicked effect */
-#schoolButton:active {
-  background-color: #024C42;
-  border-color: #024C42;
-  color: white;
+
+
+.aactive {
+  background-color: #024C42 !important;
+  border-color: #024C42 !important;
+  color: white !important;
 }
+
+.aactive:hover {
+  background-color: #024C42 !important;
+  border-color: #024C42 !important;
+  color: white !important;
+}
+
+
 .timeline-divider {
     height: 40px; /* Adjust as needed */
 }
